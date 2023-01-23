@@ -85,3 +85,78 @@ public class EstructurasSecuenciales {
     }
     
 }
+
+
+
+Ejercio 3
+
+
+package estructurassecuenciales;
+import java.util.Scanner;
+/**
+ *
+ * @author Aprendiz
+ */
+public class Nota {
+    public static void main (String[] args){
+        Scanner leer = new Scanner(System.in);
+        
+        
+        //ENTRADA
+        //variables de entrada
+        
+        double examenMate;
+        double tareaMate1;
+        double tareaMate2;
+        double tareaMate3;
+        double examenFisica;
+        double tareaFisica1;
+        double tareaFisica2;
+        double examenQuimica;
+        double tareaQuimica1;
+        double tareaQuimica2;
+        double tareaQuimica3;
+        double notafinalMate;
+        double notafinalFisica;
+        double notafinalQumica;
+        
+        
+        //Lectura de datos
+        System.out.println("Ingrese la nota del examen de matematicas: ");
+        examenMate = leer.nextDouble();
+        System.out.println("Ingrese la nota 1 de matematicas");
+        tareaMate1 = leer.nextDouble();
+        System.out.println("Ingrese la nota 2 de matematicas");
+        tareaMate2 = leer.nextDouble();
+        System.out.println("Ingrese la nota 3 de matematicas");
+        tareaMate3 = leer.nextDouble();
+        System.out.println("Ingrese el examen final de fisica");
+        examenFisica = leer.nextDouble();
+        System.out.println("Ingrese la nota 1 de fisica");
+        tareaFisica1 = leer.nextDouble();
+        System.out.println("Ingrese la nota 2 de fisica");
+        tareaFisica2= leer.nextDouble();
+        System.out.println("Ingrese el examen final de quimica");
+        examenQuimica = leer.nextDouble();
+        System.out.println("Ingrese la nota la nota 1 de quimica");
+        tareaQuimica1= leer.nextDouble();
+        System.out.println("Ingrese la nota 2 de quimica");
+        tareaQuimica2= leer.nextDouble();
+        System.out.println("Ingrese la nota 3 de quimica");
+        tareaQuimica3 = leer.nextDouble();
+        
+        
+        //PROCESO
+        
+        notafinalMate = examenMate*0.90+(tareaMate1+tareaMate2+tareaMate3)/3*0.10;
+        notafinalFisica=examenFisica*0.80+(tareaFisica1+tareaFisica2)/2*0.20;
+        notafinalQuimica=examenQuimica*0.85+(tareaQuimica1+tareaQuimica2+tareaQuimica3)/3*0.15;
+        
+        System.out.println("La nota de matematicas es : "+notafinalMate);
+        System.out.println("La nota de fisica es: " + notafinalFisica);
+        System.out.println("La nota final de quimica es:"+notafinalQuimica);
+       
+                
+  }
+}
+
