@@ -39,3 +39,49 @@ public class EstructurasSecuenciales {
     }
     
 }
+
+
+
+
+EJERCICIO 2 
+
+
+package estructurassecuenciales;
+
+
+public class EstructurasSecuenciales {
+
+    
+    public static void main(String[] args) {
+      
+  //Ejercicio 2
+  
+     double Nota1 = 3.0;
+     double Nota2 = 3.0;
+     double Nota3 = 3.0; 
+     double ExamenFinal = 3.0; 
+     double TrabajoFinal = 3.0;
+     
+     
+     
+     
+     //PROCESO
+     //1 forma
+     double promediof = (Nota1+Nota2+Nota3)/3*0.55;
+     double resExamen = ExamenFinal * 0.3;
+     double resTrabajoFinal = TrabajoFinal*0.15;
+     double notaFinal = promediof + resExamen + resTrabajoFinal
+     
+  
+     
+     
+     
+     //SALIDA
+     
+     System.out.println("El promedio es:  " + promediof);
+     System.out.println("El Examen final es: " + resExamen);
+     System.out.println("Trabajo final es: "+resTrabajoFinal);
+     System.out.println("La nota definitiva es: " + notaFinal);
+    }
+    
+}
