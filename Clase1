@@ -1,0 +1,41 @@
+
+package estructurassecuenciales;
+
+
+public class EstructurasSecuenciales {
+
+    
+    public static void main(String[] args) {
+      
+     //ENTRADA
+     //Definir variables
+     //Tipo de dato va ser numerico
+     //int entero
+     //decimal decimal
+     //doble numero decimal grande
+     //float pinto de coma flotante
+     
+     double precioVenta=1000000;
+     double porcentajeDescuento=0.15;
+     double descuento=0;
+     double valorPagar=0;
+     
+     
+     
+     //PROCESO
+     //1 forma
+     valorPagar=precioVenta*0.85;
+     //2 forma
+     valorPagar = precioVenta-precioVenta*porcentajeDescuento;
+     //3 forma
+     descuento = precioVenta*porcentajeDescuento;
+     valorPagar=precioVenta-descuento;
+     
+     
+     
+     //SALIDA
+     
+     System.out.println("El valor a pagar es: " + valorPagar);
+    }
+    
+}
