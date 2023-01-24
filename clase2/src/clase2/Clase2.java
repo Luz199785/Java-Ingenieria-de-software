@@ -143,3 +143,33 @@ public class Switch {
     }
 }
 
+
+
+FOR
+
+package ciclos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Aprendiz
+ */
+public class Ciclos {
+    public static void main(String[] args) {
+        
+     
+        Scanner lectura = new Scanner(System.in);
+        int numero;
+        System.out.println("Ingrese el numero para generar la tabla de multiplicacion");
+        numero = lectura.nextInt();
+        
+        for (int i = 1; i < 10; i++) {
+            System.out.println(numero + "*" + "=" + numero*i);
+            
+        }
+       
+    }
+
+}
+
