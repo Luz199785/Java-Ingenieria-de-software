@@ -77,3 +77,69 @@ public class Clase2 {
         }
 
 }
+
+
+
+Switch
+
+package clase2;
+
+/**
+ *
+ * @author Aprendiz
+ */
+public class Switch {
+    public static void main(String[] args) {
+        Scanner lectura = new Scanner(System.in);
+        int mes;
+        System.out.println("Ingrese el numero del mes");
+        mes=lectura.nextInt();
+        
+        
+        if (mes>=1 && mes<=12){
+            //codigo
+            switch(mes)
+                case 1:
+                    System.out.println("El mes tiene 31 dias");
+                    break;
+                case 2: 
+                     System.out.println("El mes tiene 28 dias");
+                    break;
+                case 3: 
+                     System.out.println("El mes tiene 31 dias");
+                    break;
+                case 4: 
+                     System.out.println("El mes tiene 30 dias");
+                    break;
+                case 5: 
+                     System.out.println("El mes tiene 31 dias");
+                    break;
+                case 6: 
+                     System.out.println("El mes tiene 30 dias");
+                    break;
+                case 7: 
+                     System.out.println("El mes tiene 31 dias");
+                    break;
+                case 8: 
+                     System.out.println("El mes tiene 31 dias");
+                    break;
+                case 9: 
+                     System.out.println("El mes tiene 30 dias");
+                    break;
+                case 10: System.out.println("El mes tiene 31 dias");
+                    break;
+                case 11: System.out.println("El mes tiene 30 dias ");
+                    break;
+                case 12:
+                         System.out.println("El mes tiene 31 dias");
+                    break;
+                 
+                default:
+                    throw new AssertionError();
+                    
+                }
+        }
+       
+    }
+}
+
