@@ -118,10 +118,6 @@ public class CamaraDiputados {
 
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-7) Un jefe de casilla desea determinar cuantas personas de cada una de las 
-secciones que componen su zona asisten el día de las votaciones. Las secciones son: norte, sur y centro.
-También desea determinar cual es la sección con mayor numero de votantes.
-
 package factorial;
 import java.util.Scanner;
 /**
@@ -160,7 +156,18 @@ public class votaciones {
         System.out.println("La cantidad de votantes de norte son: "+norte);
             System.out.println("La cantidad de votantes de sur son: "+sur);
             System.out.println("La cantidad de votantes de centro son: "+centro);
+            
+            if (norte>sur && norte>sur){
+                System.out.println("La seccion norte tiene mas votantes");
+            }
+                else if (sur>norte && sur>centro){
+                        System.out.println("La seccion sur tiene mas votantes");
+                }
+                        else if (centro>sur && centro>centro){
+                        System.out.println("La seccion centro tiene mas votantes");
+                        }
+            
+               
     }
 
 }
-
