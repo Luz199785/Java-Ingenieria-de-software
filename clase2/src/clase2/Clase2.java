@@ -200,4 +200,52 @@ public class Reloj {
 
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+package ciclos.Reloj;
 
+import java.util.Scanner;
+
+/**
+ *
+ * @author Aprendiz
+ */
+public class zoologico {
+    public static void main(String[] args) {
+        Scanner lectura = new Scanner(System.in);
+        String animal;
+        int ciclo=0,edad;
+        int categoria1=0,categoria2=0,categoria3=0;
+        System.out.println("Ingrese el tipo de animal a estudiar (Elefante, Jirafa, Chimpance)");
+        animal=lectura.next();
+        
+        switch(animal.toUpperCase()){
+            case"ELEFANTE":
+                ciclo = 20;
+                break;
+            case "JIRAFA":
+                ciclo = 15;
+                break;
+            
+            case "CHIMPANCE":
+                ciclo= 40;
+                break;
+        }
+        for (int i = 1; i <= ciclo; i++) {
+            System.out.println("Ingrese la edad");
+            edad = lectura.nextInt();
+            if (edad<=1){
+                categoria1 = categoria1 + 1;
+                
+            }else if(edad>1 && edad<=3){
+                    categoria2 = categoria2 + 1;
+                }else{
+                    categoria3 = categoria3 + 1;
+            
+        }
+    }
+        System.out.println("La categoria 1 tiene"+(double) +categoria1/ciclo*100+"%");
+        System.out.println("La categoria 2 tiene" +(double)+categoria2/ciclo*100+"%");
+        System.out.println("La categoria 3 tiene"+(double)+categoria3/ciclo*100+"%");
+
+   }
+}
