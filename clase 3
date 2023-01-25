@@ -62,7 +62,11 @@ public class MientrasQue {
 
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+) En la Cámara de Diputados se levanta una encuesta con todos los integrantes 
+con el fin de determinar que porcentaje de los n diputados esta a favor del Tratado de Libre Comercio, 
+que porcentaje esta en contra y que porcentaje se abstiene de opinar
 package factorial;
+
 import java.util.Scanner;
 /**
  *
@@ -110,6 +114,52 @@ public class CamaraDiputados {
         System.out.println("El porcentaje de votos en contra es:"+encontra*100+"%");
         System.out.println("El porcrntaje de votos que se abstienen de votar es:"+abstiene*100+"%");
        
+    }
+
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+7) Un jefe de casilla desea determinar cuantas personas de cada una de las 
+secciones que componen su zona asisten el día de las votaciones. Las secciones son: norte, sur y centro.
+También desea determinar cual es la sección con mayor numero de votantes.
+
+package factorial;
+import java.util.Scanner;
+/**
+ *
+ * @author Aprendiz
+ */
+public class votaciones {
+    public static void main(String[] args) {
+        
+        Scanner lector = new Scanner(System.in);
+        
+        int norte=0;
+        int sur=0;
+        int centro=0;
+        int opcion=1;
+        
+        while (opcion!=0){
+            System.out.println("Ingrese la opcion\n1=norte\n2=sur\n3=centro\n0=salir");
+            opcion=lector.nextInt();
+            
+            switch (opcion){
+                case 1:
+                    norte++;
+                    break;
+                case 2:
+                    sur++;
+                    break;
+                case 3:
+                    centro++;
+                    break;
+                    
+                
+            }
+           
+        }
+        System.out.println("La cantidad de votantes de norte son: "+norte);
+            System.out.println("La cantidad de votantes de sur son: "+sur);
+            System.out.println("La cantidad de votantes de centro son: "+centro);
     }
 
 }
